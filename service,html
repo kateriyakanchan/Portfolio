@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shopify development services by Kanchan — theme customization, Liquid, frontend development, product pages, metafields and integrations.">
+  <title>Services — Kanchan | Shopify Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="services.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="index.html"><span>KANCHAN</span><small>SHOPIFY DEVELOPER</small></a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="services.html">Services</a>
+        <a href="work.html">Work</a><a href="process.html">Process</a><a href="contact.html">Contact</a>
+      </div>
+      <a class="nav-cta" href="contact.html">LET'S WORK TOGETHER <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="services-hero">
+      <div class="container services-hero-inner reveal">
+        <p class="eyebrow"><span></span> SERVICES</p>
+        <h1>Shopify help for<br><em>real-world stores.</em></h1>
+        <p>From a small theme fix to a complete storefront customization, I help turn Shopify stores into cleaner, smoother and more on-brand experiences.</p>
+      </div>
+    </section>
+
+    <section class="service-list section">
+      <div class="container">
+        <div class="service-row reveal">
+          <div class="service-index">01</div>
+          <div class="service-main"><p class="service-kicker">BUILD · CUSTOMIZE · EXTEND</p><h2>Shopify Theme<br><em>Customization</em></h2></div>
+          <div class="service-detail"><p>Make your existing Shopify theme look and behave the way your brand needs it to.</p><ul><li>Custom sections & blocks</li><li>Theme layout changes</li><li>Header, footer & navigation</li><li>Typography, spacing & styling</li><li>Responsive adjustments</li></ul></div>
+        </div>
+
+        <div class="service-row reveal">
+          <div class="service-index">02</div>
+          <div class="service-main"><p class="service-kicker">CODE · DYNAMIC · FLEXIBLE</p><h2>Liquid & Theme<br><em>Development</em></h2></div>
+          <div class="service-detail"><p>Build dynamic Shopify experiences using Liquid and Shopify's theme architecture.</p><ul><li>Liquid templates & snippets</li><li>Dynamic content</li><li>Metafield implementation</li><li>Custom product/collection sections</li><li>Reusable theme components</li></ul></div>
+        </div>
+
+        <div class="service-row reveal">
+          <div class="service-index">03</div>
+          <div class="service-main"><p class="service-kicker">DESIGN → CODE</p><h2>Frontend &<br><em>Responsive UI</em></h2></div>
+          <div class="service-detail"><p>Translate a Figma design or visual idea into a polished, responsive storefront.</p><ul><li>HTML / CSS / JavaScript</li><li>Figma to Shopify</li><li>Mobile-first layouts</li><li>Interactions & micro-details</li><li>Cross-device testing</li></ul></div>
+        </div>
+
+        <div class="service-row reveal">
+          <div class="service-index">04</div>
+          <div class="service-main"><p class="service-kicker">PRODUCT · CONVERSION · UX</p><h2>Product Page<br><em>Experience</em></h2></div>
+          <div class="service-detail"><p>Improve the part of your store where customers make the buying decision.</p><ul><li>Product page sections</li><li>Variant & option UI</li><li>Size charts & accordions</li><li>Trust and information blocks</li><li>Mobile product experience</li></ul></div>
+        </div>
+
+        <div class="service-row reveal">
+          <div class="service-index">05</div>
+          <div class="service-main"><p class="service-kicker">DATA · CONTENT · PERSONALIZATION</p><h2>Metafields &<br><em>Dynamic Content</em></h2></div>
+          <div class="service-detail"><p>Make your Shopify theme more flexible by connecting content to the right places.</p><ul><li>Metafield setup & display</li><li>Dynamic product information</li><li>Custom content blocks</li><li>Conditional theme content</li><li>Merchant-friendly editing</li></ul></div>
+        </div>
+
+        <div class="service-row reveal">
+          <div class="service-index">06</div>
+          <div class="service-main"><p class="service-kicker">CONNECT · CONFIGURE · POLISH</p><h2>Apps &<br><em>Integrations</em></h2></div>
+          <div class="service-detail"><p>Bring useful Shopify apps into the storefront without making the experience feel disconnected.</p><ul><li>Reviews & ratings</li><li>Wishlist & customer tools</li><li>Filters & search</li><li>WhatsApp/chat integrations</li><li>App UI customization</li></ul></div>
+        </div>
+
+        <div class="service-row reveal">
+          <div class="service-index">07</div>
+          <div class="service-main"><p class="service-kicker">DEBUG · FIX · IMPROVE</p><h2>Store Fixes &<br><em>Improvements</em></h2></div>
+          <div class="service-detail"><p>Have something that isn't behaving properly? I can investigate and improve the storefront.</p><ul><li>Theme bugs</li><li>Responsive issues</li><li>UI inconsistencies</li><li>Section/template issues</li><li>Small feature improvements</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-dark fit">
+      <div class="container fit-grid">
+        <div class="reveal"><p class="eyebrow light"><span></span> IS THIS A GOOD FIT?</p><h2>You have the idea.<br><em>I can help build it.</em></h2></div>
+        <div class="fit-copy reveal">
+          <p>I’m a good fit if you already have a Shopify store and need someone who can understand the design, work inside the theme and actually implement the details.</p>
+          <div class="fit-points"><span>✓ Existing Shopify stores</span><span>✓ New storefront builds</span><span>✓ Figma to Shopify</span><span>✓ Ongoing improvements</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section engagement">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow"><span></span> WAYS WE CAN WORK TOGETHER</p>
+          <h2>Flexible for the<br><em>project you have.</em></h2>
+        </div>
+        <div class="engagement-grid">
+          <article class="engagement-card reveal"><span>01</span><h3>One-off Project</h3><p>For a defined Shopify task, page, feature or customization with a clear scope.</p><a href="contact.html">DISCUSS A PROJECT ↗</a></article>
+          <article class="engagement-card reveal"><span>02</span><h3>Store Improvements</h3><p>For a list of fixes and improvements that we can work through in focused batches.</p><a href="contact.html">SEND YOUR LIST ↗</a></article>
+          <article class="engagement-card reveal"><span>03</span><h3>Ongoing Support</h3><p>For brands that need a reliable Shopify developer for regular updates and improvements.</p><a href="contact.html">LET'S TALK ↗</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-dark services-cta">
+      <div class="container contact-inner reveal">
+        <p class="eyebrow light"><span></span> READY WHEN YOU ARE</p>
+        <h2>Tell me what your<br><em>store needs.</em></h2>
+        <p>Send over the details. Even if you're not sure exactly what you need yet, we can figure it out together.</p>
+        <a class="contact-button" href="contact.html">START A CONVERSATION <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div><strong>KANCHAN</strong><small>SHOPIFY DEVELOPER</small></div>
+      <p>© 2026 Kanchan. Built with intention.</p>
+      <div class="footer-links"><a href="index.html">Home ↑</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

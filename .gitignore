@@ -1,0 +1,24 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and local workspace data
+.idea/
+.vscode/
+.history/
+
+# Dependencies and generated output
+node_modules/
+dist/
+build/
+coverage/
+*.log
+npm-debug.log*
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
