@@ -3,11 +3,13 @@
 This repository contains a static portfolio website built with HTML, CSS and vanilla JavaScript. The four storefront/product-page examples are independent concept demos, not paid client projects.
 
 ## Run locally
-Open `index.html` in a browser, or use VS Code + Live Server.
+Open `index.html` in a browser, use VS Code + Live Server, or run a local static server from the repository root:
+
+```powershell
+npx.cmd --yes http-server . -p 8080
+```
 
 The Work page links to the shared case-study template at `case-study.html`. Each project uses a `project` query value, for example `case-study.html?project=storefront`.
-
-If you use the included Chrome launch configuration, start the static server from the workspace root with `npx.cmd --yes http-server kanchan-portfolio -p 8080` and then launch Chrome against `http://localhost:8080`.
 
 ## Before publishing the site
 1. Replace the `yourdomain.com` placeholders in social metadata, structured data, `robots.txt` and `sitemap.xml` with the actual public domain.
