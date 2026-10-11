@@ -22,7 +22,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=21">
-  <link rel="stylesheet" href="contact.css?v=8">
+  <link rel="stylesheet" href="contact.css?v=9">
 </head>
 <body>
   <header class="nav-wrap">
@@ -65,10 +65,8 @@
           <h2>Tell me the<br><em>good parts.</em></h2>
           <p>The more context you share, the more useful the first conversation can be. You don't need to have everything figured out before reaching out.</p>
         </div>
-        <form class="inquiry-form reveal" action="https://mail.google.com/mail/" method="get">
-          <input type="hidden" name="view" value="cm">
-          <input type="hidden" name="fs" value="1">
-          <input type="hidden" name="to" value="kateriyakanchan@gmail.com">
+        <form class="inquiry-form reveal" action="https://formspree.io/f/mrpekrrg" method="post">
+          <input type="hidden" name="_subject" value="New Shopify project inquiry">
           <div class="form-field"><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" autocomplete="name" required></div>
           <div class="form-field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="Enter your email" autocomplete="email" required></div>
           <div class="form-field"><label for="brand">Brand / Business</label><input id="brand" name="brand" type="text" placeholder="Your brand or business name"></div>
@@ -86,7 +84,8 @@
           </select></div>
 
           <button class="button button-dark" type="submit">SEND INQUIRY <span>↗</span></button>
-          <p class="form-note">This form opens a Gmail draft with your inquiry details. No information is stored on this site.</p>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-note">Your inquiry is sent securely through Formspree. This website does not store your submission.</p>
         </form>
       </div>
     </section>
@@ -137,6 +136,6 @@
       <div class="footer-bottom"><span>© 2026 Kanchan. Built with intention.</span><a href="index.html#home">Back to top ↑</a></div>
     </div>
   </footer>
-  <script src="script.js?v=5"></script>
+  <script src="script.js?v=6"></script>
 </body>
 </html>

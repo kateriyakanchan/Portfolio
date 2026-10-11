@@ -55,28 +55,45 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 const inquiryForm = document.querySelector('.inquiry-form');
-inquiryForm?.addEventListener('submit', (event) => {
+inquiryForm?.addEventListener('submit', async (event) => {
   event.preventDefault();
   if (!inquiryForm.reportValidity()) return;
 
-  const formData = new FormData(inquiryForm);
-  const name = String(formData.get('name') || '').trim();
-  const fields = [
-    ['Name', name],
-    ['Email', formData.get('email')],
-    ['Brand / Business', formData.get('brand')],
-    ['Service', formData.get('service')],
-    ['Timeline', formData.get('timeline')],
-    ['Budget', formData.get('budget')],
-    ['Project details', formData.get('message')]
-  ].filter(([, value]) => String(value || '').trim());
-  const composeUrl = new URL('https://mail.google.com/mail/');
-  composeUrl.searchParams.set('view', 'cm');
-  composeUrl.searchParams.set('fs', '1');
-  composeUrl.searchParams.set('to', 'kateriyakanchan@gmail.com');
-  composeUrl.searchParams.set('su', `Shopify project inquiry${name ? ` from ${name}` : ''}`);
-  composeUrl.searchParams.set('body', fields.map(([label, value]) => `${label}: ${String(value).trim()}`).join('\n\n'));
-  window.location.assign(composeUrl.toString());
+  const status = inquiryForm.querySelector('.form-status');
+  const submitButton = inquiryForm.querySelector('button[type="submit"]');
+  const originalButtonContent = submitButton.innerHTML;
+  submitButton.disabled = true;
+  submitButton.textContent = 'SENDING...';
+  status.dataset.state = 'pending';
+  status.textContent = 'Sending your inquiry...';
+
+  try {
+    const response = await fetch(inquiryForm.action, {
+      method: 'POST',
+      body: new FormData(inquiryForm),
+      headers: { Accept: 'application/json' }
+    });
+    const result = response.headers.get('content-type')?.includes('application/json')
+      ? await response.json()
+      : null;
+
+    if (!response.ok) {
+      const formErrors = result?.errors?.map(error => error.message).filter(Boolean).join(' ');
+      throw new Error(formErrors || result?.error || 'Please try again in a moment.');
+    }
+
+    inquiryForm.reset();
+    status.dataset.state = 'success';
+    status.textContent = 'Thanks! Your inquiry has been sent. I’ll get back to you soon.';
+  } catch (error) {
+    status.dataset.state = 'error';
+    status.textContent = error instanceof Error
+      ? `We couldn’t send your inquiry. ${error.message}`
+      : 'We couldn’t send your inquiry. Please try again in a moment.';
+  } finally {
+    submitButton.disabled = false;
+    submitButton.innerHTML = originalButtonContent;
+  }
 });
 
 const observer = new IntersectionObserver((entries) => {

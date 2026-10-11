@@ -21,13 +21,19 @@
 .contact-intro > p:not(.eyebrow) { max-width: 360px; color: var(--muted); font-size: 14px; line-height: 1.85; }
 .inquiry-form { display: grid; grid-template-columns: 1fr 1fr; column-gap: 22px; }
 .form-field { min-width: 0; }
-.form-field-wide, .inquiry-form button, .form-note { grid-column: 1 / -1; }
+.form-field-wide, .inquiry-form button, .form-status, .form-note { grid-column: 1 / -1; }
 .inquiry-form label { display: block; margin-bottom: 9px; color: #776e66; font-size: 10px; letter-spacing: .1em; }
 .inquiry-form input, .inquiry-form select, .inquiry-form textarea { width: 100%; margin-bottom: 25px; padding: 13px 0; border: 0; border-bottom: 1px solid #cfc6bc; border-radius: 0; outline: 0; background: transparent; color: var(--ink); font: inherit; font-size: 14px; }
 .inquiry-form input:focus, .inquiry-form select:focus, .inquiry-form textarea:focus { border-bottom-color: var(--ink); box-shadow: 0 1px 0 var(--ink); }
 .inquiry-form select { appearance: none; background: linear-gradient(45deg, transparent 50%, #776e66 50%) calc(100% - 4px) 18px / 5px 5px no-repeat, linear-gradient(135deg, #776e66 50%, transparent 50%) 100% 18px / 5px 5px no-repeat; }
 .inquiry-form textarea { resize: vertical; min-height: 145px; }
 .inquiry-form button { justify-self: start; border: 0; cursor: pointer; }
+.inquiry-form button:disabled { cursor: wait; opacity: .65; }
+.form-status { min-height: 0; margin: 0; font-size: 13px; line-height: 1.6; }
+.form-status:empty { display: none; }
+.form-status[data-state="success"] { color: #47704e; }
+.form-status[data-state="error"] { color: #a13e36; }
+.form-status[data-state="pending"] { color: var(--muted); }
 .form-note { margin: 19px 0 0; color: #978e86; font-size: 10px; line-height: 1.6; }
 .contact-expectations { background: #e8e0d6; }
 .expectations-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; }
@@ -65,5 +71,5 @@
   .contact-aside { padding-left: 18px; }
   .contact-aside a { font-size: 22px; }
   .inquiry-form { grid-template-columns: 1fr; }
-  .form-field-wide, .inquiry-form button, .form-note { grid-column: 1; }
+  .form-field-wide, .inquiry-form button, .form-status, .form-note { grid-column: 1; }
 }
