@@ -11,11 +11,9 @@ npx.cmd --yes http-server . -p 8080
 
 The Work page links to the shared case-study template at `case-study.html`. Each project uses a `project` query value, for example `case-study.html?project=storefront`.
 
-## Before publishing the site
-1. Replace the `yourdomain.com` placeholders in social metadata, structured data, `robots.txt` and `sitemap.xml` with the actual public domain.
-2. Keep the project email in sync with `kateriyakanchan@gmail.com`.
-3. Replace concept preview artwork in `assets/projects/` with approved project screenshots when available.
-4. Update project titles, descriptions, About copy and services with accurate information.
+## Deploy to GitHub Pages
+This repository is published at <https://kateriyakanchan.github.io/Portfolio/>.
 
-## Deploy to Netlify
-Drag the entire `kanchan-portfolio` folder into Netlify's manual deploy area, or connect the folder through a Git repository.
+To enable or verify publishing, open the repository's **Settings → Pages**, choose **Deploy from a branch**, and select the `main` branch and `/(root)` folder. No build command is required. After committing and pushing changes to `main`, GitHub Pages publishes the update automatically.
+
+Keep the project email in sync with `kateriyakanchan@gmail.com`. Replace concept preview artwork in `assets/projects/` with approved project screenshots when available, and update project titles, descriptions, About copy and services with accurate information.
