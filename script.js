@@ -22,7 +22,7 @@ const themeToggle = document.createElement('button');
 themeToggle.className = 'theme-toggle';
 themeToggle.type = 'button';
 themeToggle.setAttribute('aria-label', 'Switch to dark mode');
-document.body.append(themeToggle);
+(nav || document.body).append(themeToggle);
 
 const setTheme = (isDark) => {
   document.body.classList.toggle('dark-mode', isDark);
@@ -39,13 +39,19 @@ themeToggle.addEventListener('click', () => setTheme(!document.body.classList.co
 toggle?.setAttribute('aria-controls', 'site-navigation');
 document.querySelector('.nav-links')?.setAttribute('id', 'site-navigation');
 
+const setMenuOpen = (open) => {
+  nav?.classList.toggle('open', open);
+  toggle?.setAttribute('aria-expanded', String(open));
+  toggle?.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  if (toggle) toggle.textContent = open ? '×' : '☰';
+};
+
 toggle?.addEventListener('click', () => {
-  const open = nav.classList.toggle('open');
-  toggle.setAttribute('aria-expanded', open);
+  setMenuOpen(!nav.classList.contains('open'));
 });
 
 document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => nav.classList.remove('open'));
+  link.addEventListener('click', () => setMenuOpen(false));
 });
 
 const inquiryForm = document.querySelector('.inquiry-form');

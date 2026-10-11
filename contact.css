@@ -11,7 +11,7 @@
 .contact-hero-text { max-width: 545px; color: #aaa19a; line-height: 1.85; font-size: 15px; }
 .contact-aside { width: 100%; padding: 28px 0 8px 28px; border-left: 1px solid rgba(255,255,255,.2); }
 .contact-aside p { margin-bottom: 18px; color: #9e958d; font-size: 9px; letter-spacing: .18em; }
-.contact-aside a { display: inline-block; color: #f2ede6; border-bottom: 1px solid rgba(255,255,255,.35); padding-bottom: 8px; font-family: var(--serif); font-size: 26px; }
+.contact-aside a { display: inline-block; color: #f2ede6; border-bottom: 1px solid rgba(255,255,255,.35); padding-bottom: 8px; font-family: var(--serif); font-size: 26px; overflow-wrap: anywhere; }
 .contact-aside a span { margin-left: 10px; font-family: var(--sans); font-size: 16px; }
 .contact-aside small { display: block; max-width: 280px; margin-top: 18px; color: #817871; font-size: 10px; line-height: 1.7; }
 .contact-form-section { background: #f7f3ed; }
@@ -53,11 +53,14 @@
 .contact-cta { padding: 88px 0; text-align: center; }
 @media(max-width:900px) {
   .contact-hero-grid, .contact-form-grid, .expectations-grid { grid-template-columns: 1fr; gap: 40px; }
+  .contact-hero-grid { grid-template-columns: minmax(0, 1fr); }
+  .contact-hero-grid > .reveal { min-width: 0; }
   .contact-aside { max-width: 520px; }
   .contact-intro { padding-top: 0; }
 }
 @media(max-width:560px) {
   .contact-hero { padding-top: 125px; }
+  .contact-hero h1 { min-width: 0; font-size: clamp(42px, 12vw, 64px); overflow-wrap: anywhere; }
   .contact-cta { padding:60px 0; }
   .contact-aside { padding-left: 18px; }
   .contact-aside a { font-size: 22px; }

@@ -24,8 +24,9 @@
 .build-list span { color: #958b82; font-size: 10px; letter-spacing: .12em; }
 .build-list p { margin: 0; font-size: 20px; }
 .case-visuals { background: #f7f3ed; }
-.experience-block { margin-bottom: 58px; }
+.experience-block { min-width: 0; margin-bottom: 58px; }
 .experience-heading { margin-bottom: 22px; }
+.experience-heading h3 { overflow-wrap: anywhere; }
 .experience-heading span { display: block; margin-bottom: 13px; color: #958b82; font-size: 10px; letter-spacing: .14em; }
 .experience-heading p { margin: 0; color: var(--muted); font-size: 11px; }
 .store-visual { background: #d7c7b7; position: relative; overflow: hidden; }
