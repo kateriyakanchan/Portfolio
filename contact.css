@@ -57,6 +57,28 @@
 .reassurance-inner > p:not(.eyebrow) { color: var(--muted); font-size: 14px; line-height: 1.8; }
 .reassurance-inner blockquote { margin: 28px auto; font-size: clamp(24px, 3vw, 38px); }
 .contact-cta { padding: 88px 0; text-align: center; }
+body.dark-mode .inquiry-form { color-scheme: dark; }
+body.dark-mode .inquiry-form label { color: #b9b1a9; }
+body.dark-mode .inquiry-form input:-webkit-autofill,
+body.dark-mode .inquiry-form input:-webkit-autofill:hover,
+body.dark-mode .inquiry-form input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--ink);
+  -webkit-box-shadow: 0 0 0 1000px #1b1c1d inset;
+  caret-color: var(--ink);
+}
+body.dark-mode .inquiry-form input:-moz-autofill {
+  box-shadow: 0 0 0 1000px #1b1c1d inset;
+  color: var(--ink);
+}
+body.dark-mode .inquiry-form select option {
+  background: #242526;
+  color: #eee9e2;
+}
+body.dark-mode .inquiry-form select {
+  background-image: linear-gradient(45deg, transparent 50%, #b9b1a9 50%), linear-gradient(135deg, #b9b1a9 50%, transparent 50%);
+}
+body.dark-mode .form-status[data-state="success"] { color: #9ed0a6; }
+body.dark-mode .form-status[data-state="error"] { color: #f0a49d; }
 @media(max-width:900px) {
   .contact-hero-grid, .contact-form-grid, .expectations-grid { grid-template-columns: 1fr; gap: 40px; }
   .contact-hero-grid { grid-template-columns: minmax(0, 1fr); }
