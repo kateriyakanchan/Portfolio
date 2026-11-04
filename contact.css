@@ -58,6 +58,7 @@
 .reassurance-inner blockquote { margin: 28px auto; font-size: clamp(24px, 3vw, 38px); }
 .contact-cta { padding: 88px 0; text-align: center; }
 body.dark-mode .inquiry-form { color-scheme: dark; }
+body.dark-mode .contact-aside small { color: #aaa39c; }
 body.dark-mode .inquiry-form label { color: #b9b1a9; }
 body.dark-mode .inquiry-form input:-webkit-autofill,
 body.dark-mode .inquiry-form input:-webkit-autofill:hover,

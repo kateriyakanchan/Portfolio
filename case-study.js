@@ -210,7 +210,7 @@ document.body.classList.toggle('case-haaye-project', ['storefront', 'product-pag
 document.body.classList.toggle('case-shree-project', ['design-to-shopify', 'store-support'].includes(projectId));
 const isProductPage = ['product-page', 'store-support'].includes(activeProjectId);
 document.body.classList.toggle('case-pdp-project', isProductPage);
-document.title = `${project.title.replace('<em>', '').replace('</em>', '')} — Kanchan | Shopify Developer`;
+document.title = `${project.title.replace('<em>', '').replace('</em>', '')} — KANC STUDIO`;
 document.querySelector('#case-number').textContent = project.number;
 document.querySelector('#case-kicker').textContent = project.kicker;
 document.querySelector('#case-title').innerHTML = project.title;

@@ -33,7 +33,7 @@ const setTheme = (isDark) => {
   localStorage.setItem('kanchan-theme', isDark ? 'dark' : 'light');
 };
 
-setTheme(localStorage.getItem('kanchan-theme') === 'dark');
+setTheme(localStorage.getItem('kanchan-theme') !== 'light');
 themeToggle.addEventListener('click', () => setTheme(!document.body.classList.contains('dark-mode')));
 
 toggle?.setAttribute('aria-controls', 'site-navigation');
@@ -84,7 +84,7 @@ inquiryForm?.addEventListener('submit', async (event) => {
 
     inquiryForm.reset();
     status.dataset.state = 'success';
-    status.textContent = 'Thanks! Your inquiry has been sent. I’ll get back to you soon.';
+    status.textContent = 'Thanks! Your inquiry has been sent. We’ll get back to you soon.';
   } catch (error) {
     status.dataset.state = 'error';
     status.textContent = error instanceof Error

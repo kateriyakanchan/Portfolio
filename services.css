@@ -11,6 +11,7 @@
 .service-detail p { max-width: 440px; color: var(--muted); line-height: 1.8; font-size: 15px; }
 .service-detail ul { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 20px; }
 .service-detail li { font-size: 12px; line-height: 1.45; color: #615a54; padding-left: 15px; position: relative; }
+body.dark-mode .service-detail li { color: #c7c0b8; }
 .service-detail li:before { content: ""; width: 5px; height: 1px; background: #958b82; position: absolute; left: 0; top: 7px; }
 .fit { padding:88px 0; }
 .fit-grid { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; }
