@@ -26,6 +26,11 @@ a { color: inherit; text-decoration: none; }
 .menu-toggle { display: none; border: 0; background: none; color: var(--ink); font: inherit; font-size: 22px; line-height: 1; }
 .menu-toggle[aria-expanded="true"] { font-size: 28px; }
 .theme-toggle { position: fixed; top: 23px; right: 28px; z-index: 30; display: grid; width: 36px; height: 36px; place-items: center; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--ink); cursor: pointer; font: inherit; font-size: 18px; line-height: 1; }
+.whatsapp-float { position: fixed; right: 24px; bottom: 24px; z-index: 25; display: grid; width: 58px; height: 58px; place-items: center; border: 1px solid rgba(255,255,255,.55); border-radius: 50%; background: #25d366; color: #fff; box-shadow: 0 8px 24px rgba(0,0,0,.24); transition: transform .2s, box-shadow .2s; }
+.whatsapp-float:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,.3); }
+.whatsapp-float svg { display: block; width: 31px; height: 31px; fill: currentColor; }
+.whatsapp-float::after { position: absolute; right: 0; bottom: calc(100% + 10px); padding: 8px 12px; border-radius: 4px; background: #24201d; color: #f4f0e9; content: "Chat with us"; font-size: 11px; white-space: nowrap; opacity: 0; pointer-events: none; transform: translateY(4px); transition: opacity .2s, transform .2s; }
+.whatsapp-float:hover::after, .whatsapp-float:focus-visible::after { opacity: 1; transform: none; }
 .skip-link { position: fixed; top: 0; left: 16px; z-index: 40; padding: 10px 14px; transform: translateY(-120%); background: var(--dark); color: #fff; font-size: 11px; }
 .skip-link:focus { transform: translateY(0); }
 :focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Shopify development services by Kanchan — theme customization, Liquid, frontend development, product pages, metafields and integrations.">
-  <title>Services — Kanchan | Shopify Developer</title>
+  <meta name="description" content="Shopify development services by KANC STUDIO — theme customization, Liquid, frontend development, product pages, metafields and integrations.">
+  <title>Services — KANC STUDIO</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500;1,600&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <body>
   <header class="nav-wrap">
     <nav class="nav container">
-      <a class="brand" href="index.html"><span>KANCHAN</span><small>SHOPIFY DEVELOPER</small></a>
+      <a class="brand" href="index.html"><span>KANC STUDIO</span></a>
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
       <div class="nav-links">
         <a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="services.html">Services</a>
@@ -115,8 +115,8 @@
 
   <footer class="footer">
     <div class="container footer-row">
-      <div><strong>KANCHAN</strong><small>SHOPIFY DEVELOPER</small></div>
-      <p>© 2026 Kanchan. Built with intention.</p>
+      <div><strong>KANC STUDIO</strong></div>
+      <p>© 2026 KANC STUDIO. Built with intention.</p>
       <div class="footer-links"><a href="index.html">Home ↑</a></div>
     </div>
   </footer>

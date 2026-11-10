@@ -1,4 +1,4 @@
-# Kanchan — Shopify Developer Portfolio
+# KANC STUDIO — Shopify Development Portfolio
 
 This repository contains a static portfolio website built with HTML, CSS and vanilla JavaScript. The four storefront/product-page examples are independent concept demos, not paid client projects.
 
