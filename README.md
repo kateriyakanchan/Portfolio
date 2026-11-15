@@ -9,10 +9,10 @@ Open `index.html` in a browser, use VS Code + Live Server, or run a local static
 npx.cmd --yes http-server . -p 8080
 ```
 
-The Work page links to the shared case-study template at `case-study.html`. Each project uses a `project` query value, for example `case-study.html?project=storefront`.
+The site uses clean directory URLs such as `/work/` and `/services/`. The Work page links to the shared case-study template at `/case-study/`; each project uses a `project` query value, for example `/case-study/?project=storefront`.
 
 ## Deploy to GitHub Pages
-This repository is published at <https://kateriyakanchan.github.io/Portfolio/>.
+This repository is published at <https://kancstudio.in/>.
 
 To enable or verify publishing, open the repository's **Settings → Pages**, choose **Deploy from a branch**, and select the `main` branch and `/(root)` folder. No build command is required. After committing and pushing changes to `main`, GitHub Pages publishes the update automatically.
 

@@ -1,3 +1,7 @@
+if (window.location.pathname === '/index.html') {
+  window.history.replaceState(null, '', `/${window.location.search}${window.location.hash}`);
+}
+
 const nav = document.querySelector('.nav');
 const toggle = document.querySelector('.menu-toggle');
 const main = document.querySelector('main');
@@ -6,7 +10,7 @@ if (main) {
   main.id = 'main-content';
   const skipLink = document.createElement('a');
   skipLink.className = 'skip-link';
-  skipLink.href = '#main-content';
+  skipLink.href = `${window.location.pathname}${window.location.search}#main-content`;
   skipLink.textContent = 'Skip to main content';
   document.body.prepend(skipLink);
 }

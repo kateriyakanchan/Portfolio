@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kateriyakanchan.github.io/Portfolio/sitemap.xml
+Sitemap: https://kancstudio.in/sitemap.xml
