@@ -233,7 +233,7 @@ h1 em,h2 em { font-family: var(--serif); font-weight: 500; }
 .footer-brand p { max-width: 260px; margin: 9px 0 0; color: #b4aaa2; font-size: 12px; line-height: 1.6; }
 .footer-group { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
 .footer-label { margin: 0 0 2px; color: #b4aaa2; font-size: 10px; letter-spacing: .14em; }
-.footer-nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px 20px; font-size: 13px; }
+.footer-nav { display: grid; grid-template-columns: 1fr; gap: 2px; font-size: 13px; }
 .footer-nav a, .footer-email { display: inline-flex; min-height: 44px; align-items: center; color: #d0c8c0; }
 .footer-nav a, .footer-email, .footer-bottom a, .footer-cta { transition: color .2s, background-color .2s, border-color .2s; }
 .footer-nav a:hover, .footer-email:hover, .footer-bottom a:hover { color: #fff; }
@@ -322,7 +322,7 @@ h1 em,h2 em { font-family: var(--serif); font-weight: 500; }
   .shree-pdp-card-action { margin-top: 8px; padding: 8px 4px; font-size: 6px; }
   .projects { grid-template-columns: 1fr; }
   .footer-main { grid-template-columns: 1fr; gap: 24px; padding-bottom: 22px; }
-  .footer-nav { max-width: 420px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px 20px; }
+  .footer-nav { max-width: 420px; }
   .footer-contact { grid-column: 1; }
   .footer-bottom { align-items: center; flex-direction: row; }
 }
