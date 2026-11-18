@@ -302,5 +302,5 @@ document.querySelector('#case-outcome-copy').textContent = project.outcome;
 document.querySelector('#case-takeaway').textContent = project.takeaway;
 document.querySelector('#related-projects').innerHTML = relatedProjects
   .filter(relatedProject => relatedProject.id !== activeProjectId)
-  .map(relatedProject => `<a class="related-project-card" href="${relatedProject.id === 'storefront' ? '/casestudy/' : `/casestudy/${relatedProject.id}/`}"><img src="${relatedProject.image}" alt="${relatedProject.alt}" loading="lazy"><span>${relatedProject.type}</span><h3>${relatedProject.title}</h3><b aria-hidden="true">↗</b></a>`)
+  .map(relatedProject => `<a class="related-project-card" href="/casestudy/${relatedProject.id}/"><img src="${relatedProject.image}" alt="${relatedProject.alt}" loading="lazy"><span>${relatedProject.type}</span><h3>${relatedProject.title}</h3><b aria-hidden="true">↗</b></a>`)
   .join('');

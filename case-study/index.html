@@ -7,7 +7,7 @@
   <script>
     const project = new URLSearchParams(window.location.search).get('project');
     const projectIds = ['storefront', 'product-page', 'design-to-shopify', 'store-support'];
-    const destination = projectIds.includes(project) && project !== 'storefront' ? `/casestudy/${project}/` : '/casestudy/';
+    const destination = projectIds.includes(project) ? `/casestudy/${project}/` : '/casestudy/';
     window.location.replace(destination + window.location.hash);
   </script>
 </head>

@@ -9,7 +9,7 @@ Open `index.html` in a browser, use VS Code + Live Server, or run a local static
 npx.cmd --yes http-server . -p 8080
 ```
 
-The site uses clean directory URLs such as `/work/` and `/services/`. The Haaye Jhumka case study is at `/casestudy/`; the other case studies use clean paths such as `/casestudy/product-page/`.
+The site uses clean directory URLs such as `/work/` and `/services/`. Each case study has its own clean URL under `/casestudy/`, such as `/casestudy/storefront/` and `/casestudy/product-page/`.
 
 ## Deploy to GitHub Pages
 This repository is published at <https://kancstudio.in/>.
