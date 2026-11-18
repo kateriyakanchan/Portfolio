@@ -15,9 +15,8 @@ a { color: inherit; text-decoration: none; }
 .container { width: min(1160px, calc(100% - 64px)); margin: auto; }
 .nav-wrap { position: fixed; top: 0; left: 0; right: 0; z-index: 20; background: rgba(244,240,233,.88); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
 .nav { position: relative; min-height: 82px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 30px; }
-.brand { display: flex; flex-direction: column; line-height: 1; }
-.brand span { font-size: 20px; font-weight: 700; letter-spacing: .12em; }
-.brand small { margin-top: 6px; font-size: 8px; letter-spacing: .22em; color: var(--muted); }
+.brand { display: flex; align-items: center; line-height: 1; }
+.brand img { display: block; width: 68px; height: 68px; border-radius: 50%; background: #f7f3ed; object-fit: cover; }
 .nav-links { justify-self: end; display: flex; gap: 25px; font-size: 14px; color: #514b46; }
 .nav-links a, .footer-links a { transition: opacity .2s; }
 .nav-links a:hover, .footer-links a:hover { opacity: .5; }
@@ -238,7 +237,7 @@ h1 em,h2 em { font-family: var(--serif); font-weight: 500; }
 .footer { background: #1d1a18; color: #b4aaa2; border-top: 1px solid rgba(255,255,255,.08); }
 .footer-inner { padding: 36px 0 18px; }
 .footer-main { display: grid; grid-template-columns: minmax(190px, 1fr) minmax(280px, 1.3fr) minmax(220px, .9fr); align-items: start; gap: 40px; padding: 12px 0 28px; }
-.footer-brand strong { display: block; color: #f1ece5; font-size: 15px; letter-spacing: .12em; }
+.footer-brand img { display: block; width: 136px; height: 136px; margin-bottom: 14px; border-radius: 50%; background: #f7f3ed; object-fit: cover; }
 .footer-brand small { font-size: 7px; letter-spacing: .18em; }
 .footer-brand p { max-width: 260px; margin: 9px 0 0; color: #b4aaa2; font-size: 12px; line-height: 1.6; }
 .footer-group { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
@@ -315,6 +314,7 @@ h1 em,h2 em { font-family: var(--serif); font-weight: 500; }
 }
 @media (max-width: 560px) {
   .container { width: calc(100% - 32px); }
+  .brand img { width: 58px; height: 58px; }
   .section { padding: 60px 0; }
   .contact { padding: 60px 0; }
   h1 { font-size: 49px; }
