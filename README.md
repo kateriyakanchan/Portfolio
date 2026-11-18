@@ -16,6 +16,6 @@ This repository is published at <https://kancstudio.in/>.
 
 To enable or verify publishing, open the repository's **Settings → Pages**, choose **Deploy from a branch**, and select the `main` branch and `/(root)` folder. No build command is required. After committing and pushing changes to `main`, GitHub Pages publishes the update automatically.
 
-Keep the project email in sync with `kateriyakanchan@gmail.com`. Replace concept preview artwork in `assets/projects/` with approved project screenshots when available, and update project titles, descriptions, About copy and services with accurate information.
+Keep the project email in sync with `hello.kancstudio@gmail.com`. Replace concept preview artwork in `assets/projects/` with approved project screenshots when available, and update project titles, descriptions, About copy and services with accurate information.
 
 The contact form submits directly through Formspree and displays its submission status on the page.
