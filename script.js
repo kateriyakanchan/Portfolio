@@ -17,7 +17,7 @@ if (main) {
 
 document.querySelectorAll('.nav-links a').forEach(link => {
   const linkPath = new URL(link.href, window.location.href).pathname;
-  if (linkPath === window.location.pathname && !link.href.endsWith('#home')) {
+  if (linkPath === window.location.pathname) {
     link.setAttribute('aria-current', 'page');
   }
 });

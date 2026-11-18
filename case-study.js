@@ -196,7 +196,7 @@ const projects = {
   }
 };
 
-const projectId = new URLSearchParams(window.location.search).get('project');
+const projectId = window.location.pathname.match(/^\/casestudy\/([^/]+)\/?$/)?.[1] || 'storefront';
 const project = projects[projectId] || projects.storefront;
 const activeProjectId = projects[projectId] ? projectId : 'storefront';
 const relatedProjects = [
@@ -302,5 +302,5 @@ document.querySelector('#case-outcome-copy').textContent = project.outcome;
 document.querySelector('#case-takeaway').textContent = project.takeaway;
 document.querySelector('#related-projects').innerHTML = relatedProjects
   .filter(relatedProject => relatedProject.id !== activeProjectId)
-  .map(relatedProject => `<a class="related-project-card" href="/work/casestudy/?project=${relatedProject.id}"><img src="${relatedProject.image}" alt="${relatedProject.alt}" loading="lazy"><span>${relatedProject.type}</span><h3>${relatedProject.title}</h3><b aria-hidden="true">↗</b></a>`)
+  .map(relatedProject => `<a class="related-project-card" href="${relatedProject.id === 'storefront' ? '/casestudy/' : `/casestudy/${relatedProject.id}/`}"><img src="${relatedProject.image}" alt="${relatedProject.alt}" loading="lazy"><span>${relatedProject.type}</span><h3>${relatedProject.title}</h3><b aria-hidden="true">↗</b></a>`)
   .join('');

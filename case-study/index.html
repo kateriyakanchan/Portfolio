@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=/work/casestudy/">
+  <meta http-equiv="refresh" content="0; url=/casestudy/">
   <title>Case Study — KANC STUDIO</title>
-  <script>window.location.replace('/work/casestudy/' + window.location.search + window.location.hash);</script>
+  <script>
+    const project = new URLSearchParams(window.location.search).get('project');
+    const projectIds = ['storefront', 'product-page', 'design-to-shopify', 'store-support'];
+    const destination = projectIds.includes(project) && project !== 'storefront' ? `/casestudy/${project}/` : '/casestudy/';
+    window.location.replace(destination + window.location.hash);
+  </script>
 </head>
-<body><p>This page has moved to <a href="/work/casestudy/">/work/casestudy/</a>.</p></body>
+<body><p>This page has moved to <a href="/casestudy/">/casestudy/</a>.</p></body>
 </html>
