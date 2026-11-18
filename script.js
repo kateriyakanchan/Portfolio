@@ -110,13 +110,28 @@ inquiryForm?.addEventListener('submit', async (event) => {
   }
 });
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
+const revealElements = document.querySelectorAll('.reveal');
 
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  revealElements.forEach(element => {
+    let sibling = element.previousElementSibling;
+    let staggerIndex = 0;
+    while (sibling?.classList.contains('reveal')) {
+      staggerIndex++;
+      sibling = sibling.previousElementSibling;
+    }
+    element.style.setProperty('--reveal-delay', `${Math.min(staggerIndex * 90, 270)}ms`);
+    observer.observe(element);
+  });
+} else {
+  revealElements.forEach(element => element.classList.add('visible'));
+}
