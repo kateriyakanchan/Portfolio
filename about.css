@@ -67,7 +67,7 @@
 .story-copy { max-width:620px; padding-top:16px; }
 .story-copy p { color:var(--muted); line-height:1.9; font-size:14px; }
 .story-copy .lead { color:var(--ink); font-size:23px; line-height:1.5; }
-.journey { padding:88px 0; }
+.journey { padding:64px 0; }
 .journey-copy { max-width: 760px; margin-left: 25%; color: #aaa19a; font-size: 16px; line-height: 1.9; }
 .journey-copy strong { color: #f2ede6; font-weight: 500; }
 .timeline { border-top:1px solid rgba(255,255,255,.15); margin-top:42px; }
@@ -102,7 +102,7 @@
 .philosophy .eyebrow { justify-content:center; }
 blockquote { margin:35px auto 0; font-family:var(--serif); font-size:clamp(35px,4.5vw,62px); line-height:1.12; letter-spacing:-.03em; }
 blockquote em { font-weight:500; }
-.about-cta { padding:88px 0; text-align:center; }
+.about-cta { padding:64px 0; text-align:center; }
 @media(max-width:900px) {
   .about-hero-grid { grid-template-columns:1fr; gap:40px; }
   .journey-copy { margin-left: 0; }
@@ -117,7 +117,7 @@ blockquote em { font-weight:500; }
 }
 @media(max-width:560px) {
   .about-hero { padding-top:125px; }
-  .journey, .about-cta { padding:60px 0; }
+  .journey, .about-cta { padding:48px 0; }
   .workspace-scene { width:100%; aspect-ratio:1.02; }
   .tool-grid { grid-template-columns:1fr; }
   .tool-card { border-left:1px solid var(--line)!important; }

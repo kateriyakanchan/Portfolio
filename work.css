@@ -133,7 +133,7 @@
 .case-study-grid span { font-size: 9px; color: #958b82; }
 .case-study-grid h3 { margin-top: 55px; font-size: 10px; letter-spacing: .12em; }
 .case-study-grid p { color: var(--muted); font-size: 11px; line-height: 1.7; }
-.work-cta { padding: 88px 0; text-align: center; }
+.work-cta { padding: 64px 0; text-align: center; }
 @media(max-width:900px) {
   .work-page-heading { align-items: flex-start; flex-direction: column; gap: 20px; }
   .work-case, .work-case-reverse { grid-template-columns: 1fr; gap: 32px; }
@@ -144,7 +144,7 @@
 }
 @media(max-width:560px) {
   .work-hero { min-height: 64vh; padding-top: 125px; }
-  .work-cta { padding:60px 0; }
+  .work-cta { padding:48px 0; }
   .work-hero-meta { line-height: 1.8; }
   .work-case-visual { min-height: 380px; }
   .haaye-home-preview,

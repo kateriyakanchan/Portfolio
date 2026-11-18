@@ -52,7 +52,7 @@
 .flow-list span { display: block; color: #958b82; font-size: 10px; letter-spacing: .12em; }
 .flow-list strong { display: block; margin-top: 32px; font-size: 12px; letter-spacing: .12em; }
 .flow-list p { margin-top: 10px; color: var(--muted); font-size: 11px; line-height: 1.6; }
-.process-cta { padding: 88px 0; text-align: center; }
+.process-cta { padding: 64px 0; text-align: center; }
 @media(max-width:900px) {
   .process-hero-grid, .process-notes-grid, .process-needs-grid { grid-template-columns: 1fr; gap: 40px; }
   .process-index { max-width: 520px; }
@@ -68,7 +68,7 @@
 }
 @media(max-width:560px) {
   .process-hero { padding-top: 125px; }
-  .process-cta { padding:60px 0; }
+  .process-cta { padding:48px 0; }
   .process-detail-item { grid-template-columns: 45px minmax(0, 1fr); gap: 15px; padding: 32px 0; }
   .process-detail-item > div { grid-template-columns: minmax(0, 1fr); }
   .process-detail-item > div > p:not(.process-kicker):not(.process-goal) { grid-column: 1; grid-row: auto; }
