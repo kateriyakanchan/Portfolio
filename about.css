@@ -9,8 +9,6 @@
 .about-hero h1 { max-width: 700px; font-size: clamp(52px, 7vw, 90px); margin: 25px 0; }
 .about-hero-text { max-width: 550px; color: var(--muted); line-height: 1.85; font-size: 15px; }
 .about-hero-text + .about-hero-text { margin-top: 16px; }
-.brand-signature { display: grid; min-height: 230px; place-items: center; padding: 20px; background: #e8e0d6; }
-.brand-signature img { display: block; width: min(190px, 52vw); height: auto; border-radius: 50%; background: #f7f3ed; box-shadow: 0 12px 34px rgba(54,43,32,.1); }
 .about-portrait { display: flex; flex-direction: column; align-items: flex-end; }
 .workspace-scene { width: min(520px,100%); aspect-ratio: 1.08; position: relative; overflow: hidden; isolation: isolate; background: linear-gradient(180deg,#dfd3c2 0 36%,#c6a786 36% 100%); box-shadow: 0 28px 65px rgba(54,43,32,.2); }
 .workspace-scene:before { position: absolute; z-index: -1; inset: 35% 0 0; background: repeating-linear-gradient(7deg,transparent 0 25px,rgba(103,70,45,.08) 26px,transparent 28px),linear-gradient(115deg,#b98e68,#d3b18c 48%,#b48a66); content: ""; }
@@ -133,4 +131,3 @@ blockquote em { font-weight:500; }
 body.dark-mode .working-style,
 body.dark-mode .current-section { background: #1b1c1d; }
 body.dark-mode .personal-note { background: #242526; }
-body.dark-mode .brand-signature { background: #242526; }
