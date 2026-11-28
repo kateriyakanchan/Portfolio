@@ -37,7 +37,7 @@ const setTheme = (isDark) => {
   localStorage.setItem('kanchan-theme', isDark ? 'dark' : 'light');
 };
 
-setTheme(localStorage.getItem('kanchan-theme') !== 'light');
+setTheme(localStorage.getItem('kanchan-theme') === 'dark');
 themeToggle.addEventListener('click', () => setTheme(!document.body.classList.contains('dark-mode')));
 
 toggle?.setAttribute('aria-controls', 'site-navigation');
