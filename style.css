@@ -431,3 +431,10 @@ body.dark-mode .footer { background: #0a0b0c; }
 @media (max-width: 900px) {
   body.dark-mode .nav-cta { margin-right: 0; }
 }
+
+/* KANC Studio editorial identity — 2026 refresh */
+.brand { display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: center; width: max-content; min-width: 100px; text-decoration: none; }
+.brand .brand-wordmark { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; color: var(--ink); }
+.brand .brand-wordmark strong { font-family: var(--serif); font-size: 25px; line-height: .9; letter-spacing: .055em; font-weight: 500; }
+.brand .brand-wordmark small { font-family: var(--sans); font-size: 8px; font-weight: 700; line-height: 1; letter-spacing: .4em; margin-left: 2px; }
+@media (max-width: 600px) { .brand .brand-wordmark strong { font-size: 22px; } .brand .brand-wordmark small { font-size: 7px; } }
